@@ -7,3 +7,10 @@
     --cor-destaque:#546459;
     --cor-texto: #eeffd7;
 }
+
+body{
+background-color: var(--cor-de-texto);
+color: var(--cor-texto);
+font-family: 'inter', sans-serif;
+
+}
