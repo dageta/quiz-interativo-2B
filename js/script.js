@@ -38,18 +38,35 @@ mostraAlternativas();
 }
 
 function mostraAlternativas(){
-    for(const alternativa of perguntasAtual.alternativa)
+    for(const alternativa of perguntasAtual.alternativa){
         const botaoAlternativas = document.createElement("button"){
-    botaoAlternativas.textContent = botaoAlternativas.texto;
-    botaoAlternativas.addEventListener
+    botaoAlternativas.textContent = alternativa.texto;
+    botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
+    caixaAlternativas.appendChield(botaoAlternativas);
 }
+    }
 
-function mostraResultado() {
-    caixaPerguntas.textContent = `Após tudo isso, ${nome} descobriu que`;
-    textoResultado.textContent = historiaFinal;
-    caixaAlternativas.textContent = "";
-    caixaResultado.classList.add(".mostrar");
-    botaoJogarNovamente.addEventListener("click", jogarNovamente);
-}
+function respostaSelecionada(opcaoSelecionada){
+    const afirmacoes = aleatorio(opcaoSelecionada.afirmacao);
+   historiaFinal += afirmacoes + " ";
+    if(opcaoSelecionada.proxima !== undefined) {
+        atual = opcaoSelecionada.proxima;
+    }else {
+        mostraResultado();
+        return;
+    }
+    mostraPergunta()
+    }
 
-function jogarNovamente() {}
+    function mostraResultado(){
+        caixaPerguntas.textContent = `Após os estudos, ${nome} descobriu que`;
+        textoResultado.textContent = historiaFinal;
+        caixaAlternativas.textContent= "";
+        caixaResultado.classList.add("mostrar");
+        botaoJogarNovamente.addEventListener("click, jogarNovamente");
+    }
+
+    function jogarNovamente(){
+        atual = 0;
+        historiaFinal 
+    }
