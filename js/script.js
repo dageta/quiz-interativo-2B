@@ -38,13 +38,13 @@ mostraAlternativas();
 }
 
 function mostraAlternativas(){
-    for(const alternativa of perguntasAtual.alternativa){
-        const botaoAlternativas = document.createElement("button"){
+    for(const alternativa of perguntaAtual.alternativas){
+        const botaoAlternativas = document.createElement("button");
     botaoAlternativas.textContent = alternativa.texto;
     botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
     caixaAlternativas.appendChield(botaoAlternativas);
-}
     }
+}
 
 function respostaSelecionada(opcaoSelecionada){
     const afirmacoes = aleatorio(opcaoSelecionada.afirmacao);
@@ -68,5 +68,14 @@ function respostaSelecionada(opcaoSelecionada){
 
     function jogarNovamente(){
         atual = 0;
-        historiaFinal 
+        historiaFinal = "";
+        caixaResultado.classList.remove("mostrar");
+        mostraPergunta();
     }
+
+    function substituiNome() {
+        for(const pergunta of perguntas) {
+            pergunta.enunciado = pergunta.enunciado.replace(/você/g, nome);
+        }
+    }
+    substituiNome();
