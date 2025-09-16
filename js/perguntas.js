@@ -1,4 +1,4 @@
-const perguntas = [
+ export const perguntas = [
      {
         enunciado: "perguntas 1",
         alternativas: [
@@ -8,6 +8,7 @@ const perguntas = [
                     "afirmação 1",
                     "afirmação 2"
                 ],
+                proxima: 1,
             },
             {
                 texto: "alternativa 2",
@@ -15,6 +16,7 @@ const perguntas = [
                     "afirmação 1",
                     "afirmação 2"
                 ],
+                proxima: 1,
             },
         ]
     },
@@ -27,6 +29,7 @@ const perguntas = [
                     "afirmação 1",
                     "afirmação 2"
                 ],
+                proxima: 2,
             },
             {
                 texto: "alternativa 2",
@@ -34,6 +37,7 @@ const perguntas = [
                     "afirmação 1",
                     "afirmação 2"
                 ],
+            proxima: 2;
             },
         ]
     },
@@ -46,6 +50,7 @@ const perguntas = [
                     "afirmação 1",
                     "afirmação 2"
                 ],
+                proxima: 3,
             },
             {
                 texto: "alternativa 2",
@@ -53,6 +58,7 @@ const perguntas = [
                     "afirmação 1",
                     "afirmação 2"
                 ],
+                proxima: 3,
             },
         ]
     },
@@ -65,6 +71,7 @@ const perguntas = [
                     "afirmação 1",
                     "afirmação 2"
                 ],
+                proxima: 4,
             },
             {
                 texto: "alternativa 2",
@@ -72,6 +79,7 @@ const perguntas = [
                     "afirmação 1",
                     "afirmação 2"
                 ],
+                proxima: 4,
             },
         ]
     },
@@ -95,3 +103,4 @@ const perguntas = [
         ]
     },
 ]
+
