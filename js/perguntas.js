@@ -37,7 +37,7 @@
                     "afirmação 1",
                     "afirmação 2"
                 ],
-            proxima: 2;
+            proxima: 2,
             },
         ]
     },
