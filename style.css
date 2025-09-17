@@ -50,7 +50,7 @@ button:hover {
 
 .caixa-alternativas {
     display: flex;
-    flex-direction: colunm;
+    flex-direction: column;
     gap: 10px;
 }
 
